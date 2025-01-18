@@ -6,94 +6,111 @@
     <title>Snake Game</title>
 </head>
 <body>
-        <center><h1>Snake game</h1></center>
-        <center>
+
+<div class="notAvailable">
+     <center><h1 >Available</h1>
+        <h1 >only</h1>
+        <h1 >on</h1>
+        <h1 >laptaps</h1>
+        <h1>&</h1>
+        <h1>Compuers</h1>
+    </center>
+</div>
+    
             <table>
-                <tr>
-                    <td id="cell_1"></td> <td id="cell_2"></td> <td id="cell_3"></td> <td id="cell_4"></td><td id="cell_5"></td>
-                     <td id="cell_6"></td> <td id="cell_7"></td> <td id="cell_8"></td><td id="cell_9"></td> <td id="cell_10"></td>
-                </tr>
-                <tr>
-                    <td id="cell_11"></td> <td id="cell_12"></td> <td id="cell_13"></td> <td id="cell_14"></td> <td id="cell_15"></td>
-                    <td id="cell_16"></td> <td id="cell_17"></td> <td id="cell_18"></td> <td id="cell_19"></td> <td id="cell_20"></td>
-                </tr>
-                <tr>
-                    <td id="cell_21"></td> <td id="cell_22"></td> <td id="cell_23"></td> <td id="cell_24"></td> <td id="cell_25"></td>
-                    <td id="cell_26"></td> <td id="cell_27"></td> <td id="cell_28"></td> <td id="cell_29"></td> <td id="cell_30"></td>
-                </tr>
-                <tr>
-                    <td id="cell_31"></td> <td id="cell_32"></td> <td id="cell_33"></td> <td id="cell_34"></td> <td id="cell_35"></td>
-                    <td id="cell_36"></td> <td id="cell_37"></td> <td id="cell_38"></td> <td id="cell_39"></td> <td id="cell_40"></td>
-                </tr>
-                <tr>
-                    <td id="cell_41"></td> <td id="cell_42"></td> <td id="cell_43"></td> <td id="cell_44"></td> <td id="cell_45"></td>
-                    <td id="cell_46"></td> <td id="cell_47"></td> <td id="cell_48"></td> <td id="cell_49"></td> <td id="cell_50"></td>
-                </tr>
-                <tr>
-                    <td id="cell_51"></td> <td id="cell_52"></td> <td id="cell_53"></td> <td id="cell_54"></td> <td id="cell_55"></td>
-                    <td id="cell_56"></td> <td id="cell_57"></td> <td id="cell_58"></td> <td id="cell_59"></td> <td id="cell_60"></td>
-                </tr>
-                <tr>
-                    <td id="cell_61"></td> <td id="cell_62"></td> <td id="cell_63"></td> <td id="cell_64"></td> <td id="cell_65"></td>
-                    <td id="cell_66"></td> <td id="cell_67"></td> <td id="cell_68"></td> <td id="cell_69"></td> <td id="cell_70"></td>
-                </tr>
-                <tr>
-                    <td id="cell_71"></td> <td id="cell_72"></td> <td id="cell_73"></td> <td id="cell_74"></td> <td id="cell_75"></td>
-                    <td id="cell_76"></td> <td id="cell_77"></td> <td id="cell_78"></td> <td id="cell_79"></td> <td id="cell_80"></td>
-                </tr>
-                <tr>
-                    <td id="cell_81"></td> <td id="cell_82"></td> <td id="cell_83"></td> <td id="cell_84"></td> <td id="cell_85"></td>
-                    <td id="cell_86"></td> <td id="cell_87"></td> <td id="cell_88"></td> <td id="cell_89"></td> <td id="cell_90"></td>
-                </tr>
-                <tr>
-                    <td id="cell_91"></td> <td id="cell_92"></td> <td id="cell_93"></td> <td id="cell_94"></td> <td id="cell_95"></td>
-                    <td id="cell_96"></td> <td id="cell_97"></td> <td id="cell_98"></td> <td id="cell_99"></td> <td id="cell_100"></td>
-                </tr>
-            </table>
-            <h2>Score:<span>0</span></h2>
-            <h2 id="highscore">HighestScore:<span id="displayHighScore"></span></h2>
+                </table>
+
+
+                <div class="scorediv">
+<center>
+<h2 id="score">Score:<span> 0</span></h2>
+    <h2 id="highscore">HighestScore:<span id="displayHighScore"></span></h2></center>
+                </div>
         
-        </center>
+
+        <div id="instructions">
+            <center><h2 style="color: #d8c8c8;">Instructions</h2></center>
+            <ul>
+                <li style="color: #d8c8c8;">press ArrowUp to make the snake turn Up</li>
+                <li style="color: #d8c8c8;">press ArrowDown to make the snake turn Down</li>
+                <li style="color: #d8c8c8;">press Arrowright to make the snake turn right</li>
+                <li style="color: #d8c8c8;">press ArrowLeft to make the snake turn Left</li>
+                
+            </ul>  
+        </div>
+
+
         <div id="dialogbox">
-            <div id="dialogbox_content">
-                <h3>Game Over !</h3>
-                <button onclick="startgame()">play again</button>
-            </div>
+            <center>
+                <div id="dialogbox_content">
+                    <h3>Game Over !</h3>
+                    <button onclick="startGameAgain()">play again</button>
+                </div>
+            </center>
         </div>
 
         <style>
+        
+        
+        
             table{
                 position:fixed;
-                top:  11%;
-                left: 32.5%;
-                width: 35%;
-                height: 75%;
-                border:5px solid black;
+                left: 31.5%;
+                width: 45%;
+                height: 95%;
+                align-items: center;
+                border:8px solid white;
                 background-color: black;
-                border-radius: 10px;
+                border-radius: 20px;
             }
             
-            h1{
-                position:static;
-                top: 0%;
-                color: #684551;
-            }
-
             body{
                 background-color: #D5B0AC;
             }
             
-            h2{
+            #instructions{
                 position:fixed;
-                top:  85%;
-                left:33%;
+                top: 30%;
+                left: 1.5%;
+                border:3px solid white;
+                width: 27%;
+                border-radius: 10px;
+                background-color: #2F1847;
+              
+
+            }
+
+            li{
+                font-size: 1.1em;
+            }
+
+            #score{
+                border:1px solid  rgb(255, 255, 255);
+                padding: 10px;
+                background-color: #2F1847;
+                color: #d8c8c8;
+                border-radius: 10px;
             }
 
             #highscore{
-                position:fixed;
-                top:  85%;
-                left:55%;
+                border:1px solid  rgb(255, 255, 255);
+                background-color: #2F1847;
+                color: #d8c8c8;
+                padding: 10px;
+                border-radius: 10px;
             }
+
+            .scorediv{
+                position:fixed;
+                top: 29%;
+                left:80%;
+                width: 17%;
+                background-color: #2F1847;
+                border: 3px solid white;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
         
             #dialogbox{
                 display: none;
@@ -111,7 +128,6 @@
                 background-color: #fff;
                 padding: 15px;
                 padding-top:20px;
-                margin-left: 38%;
                 margin-top:15%;
                 width: 20%;
                 height: 18%;
@@ -131,168 +147,49 @@
                 background-color:#fff;
                 color: #402e2a;
                 font-weight: bold;
+             }
+             .notAvailable{
+                display: none;
+             }
         
-            }
+
+             @media (max-width:700px){
+                table{
+                 display:none;
+
+                    }
+                #instructions{
+                   display:none;
+                }
+                .scorediv{
+                    display:none;
+                }   
+                .notAvailable{
+                position: fixed;
+                top: 30%;
+                left: 25%;
+                width: 50%;
+                display: block;
+                color: #fff;
+                background-color: #2F1847;
+                border-radius: 15px;
+                border: 5px solid white;
+
+             }
+             h1{
+                color: #d8c8c8;
+             }
+             }
+
         
         </style>
-        
-        
-        <script>
-                let arr=[]
-                let row =[]
-                let score=0,highscore=0;
-                let arrcells=[[0,0],[0,1]];
-
-                let currow=0,curcol=0,prevdirection='ArrowRight',direction='ArrowRight';
-                if (localStorage.getItem("highScore") === null) {
-                    localStorage.setItem("highScore", "0");
-                }
-                highscore=parseInt(localStorage.getItem("highScore"),10);
-                document.getElementById("displayHighScore").innerHTML=highscore;
-
-                for(let i=1;i<=100;i++){
-                    if(i % 10 == 0){
-                    let cell=document.getElementById(`cell_${i}`);
-                    row.push(cell);
-                    arr.push(row);
-                    row=[];
-                    }
-                    else{
-                        let cell=document.getElementById(`cell_${i}`);
-                        row.push(cell);
-                    }
-                }
-                arr[2][4].style.backgroundColor="cyan";
-                arr[2][4].style.borderRadius="70px";
-                
-                let i=0;
-                
-                document.addEventListener('keyup' , 
-                function(e){
-                    prevdirection=direction;
-                    direction = e.key;
-                }
-                )
-        
-
-                function startgame(){
-                currow=0,curcol=0,prevdirection='ArrowRight',direction='ArrowRight';
-                for(let i=0;i<arrcells.length;i++){
-                            arr[arrcells[i][0]][arrcells[i][1]].style.backgroundColor="black";
-                        }
-                arrcells=[[0,0],[0,1]];
-                console.log(score ," ",highscore);
-            
-                if (score > highscore) {
-                        highscore = score;
-                        localStorage.setItem("highScore", highscore.toString());
-                    }
-                    score=0;
-                    document.getElementById("displayHighScore").innerHTML = highscore;
-                    document.querySelector("span").innerHTML=score;
-                    document.getElementById("dialogbox").style.display="none";
-                    movesnake = setInterval(moveAhead,340);
-            }
 
 
+<script src="app.js" >
 
-        
-                function moveAhead(){
-        
-                    let tailrow = arrcells[arrcells.length-1][0];
-                    let tailcol = arrcells[arrcells.length-1][1];
-                    if( prevdirection=="ArrowRight" && direction =="ArrowLeft")direction=prevdirection;
-                    else if( prevdirection=="ArrowLeft" && direction =="ArrowRight")direction=prevdirection;
-                    else if( prevdirection=="ArrowUp" && direction =="ArrowDown")direction=prevdirection;
-                    else if( prevdirection=="ArrowDown" && direction =="ArrowUp"  )direction=prevdirection;
-                                      
-                    
-                    if(direction !== ''){
-                            if(direction==="ArrowUp"){
-                                currow--;
-                            }
-                            else if(direction==="ArrowDown"){
-                                currow++;
-                            }
-                            else if(direction==="ArrowRight"){
-                                curcol++;
-                            }
-                            else if(direction==="ArrowLeft"){
-                                curcol--;
-                            }
-        
-                    }
+</script>
 
-                    let newrow=currow,newcol=curcol,temprow,tempcol;
-                    
 
-                    if((currow >9 || curcol>9)||(currow <0 || curcol<0)){
-                        clearInterval(movesnake);
-                        document.getElementById("dialogbox").style.display="block";
-                        return;
-                    }
-                    
-
-                    if((arr[currow][curcol].style.backgroundColor==="white")){
-                        clearInterval(movesnake);
-                        document.getElementById("dialogbox").style.display="block";
-                        return;
-                    }            
-        
-                    if(arr[currow][curcol].style.backgroundColor==="cyan"){
-                        arr[currow][curcol].style.borderRadius="5px";
-                        arr[currow][curcol].style.backgroundColor="white"; 
-                        for(let i=0;i<arrcells.length;i++){
-                            temprow = arrcells[i][0];
-                            tempcol = arrcells[i][1];
-                            arrcells[i][0]=newrow;
-                            arrcells[i][1]=newcol;
-                            newrow=temprow;
-                            newcol=tempcol;
-                        }
-                        let row_col =[newrow,newcol]; 
-                        arrcells.push(row_col);
-                        score++;
-                        document.querySelector("span").innerHTML=score;
-        
-                        while(true){
-                            let row = Math.floor(Math.random()*10),col=Math.floor(Math.random()*10);
-                            if(arr[row][col].style.backgroundColor != "white"){
-                                arr[row][col].style.backgroundColor ="cyan";
-                                arr[row][col].style.borderRadius="70px";
-                                break;
-                            }
-        
-                        }
-        
-        
-        
-                   }
-        
-        
-        
-                    else {
-                        arr[tailrow][tailcol].style.backgroundColor="black";
-                        for(let i=0;i<arrcells.length;i++){
-                            temprow = arrcells[i][0];
-                            tempcol = arrcells[i][1];
-                            arrcells[i][0]=newrow;
-                            arrcells[i][1]=newcol;
-                            newrow=temprow;
-                            newcol=tempcol;
-                        }
-                        
-                        for(let i=0;i<arrcells.length;i++){
-                                arr[arrcells[i][0]][arrcells[i][1]].style.backgroundColor="white";
-                                arr[arrcells[i][0]][arrcells[i][1]].style.borderRadius="5px";
-                                
-                        }
-                    }
-        
-                }
-                //  let movesnake = setInterval(moveAhead,340);
-        </script>
-        
 
 
     </body>
