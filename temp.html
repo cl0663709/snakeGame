@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <script src="app.js"></script>
+</head>
+<body>
+        <center>
+            <table>
+                <tr>
+                    <td id="cell_1"></td><td id="cell_2"></td><td id="cell_3"></td><td id="cell_4"></td><td id="cell_5"></td><td id="cell_6"></td><td id="cell_7"></td><td id="cell_8"></td><td id="cell_9"></td><td id="cell_10"></td><td id="cell_11"></td><td id="cell_12"></td><td id="cell_13"></td><td id="cell_14"></td><td id="cell_15"></td><td id="cell_16"></td><td id="cell_17"></td><td id="cell_18"></td><td id="cell_19"></td><td id="cell_20"></td>
+                </tr>
+                <tr>
+                    <td id="cell_21"></td><td id="cell_22"></td><td id="cell_23"></td><td id="cell_24"></td><td id="cell_25"></td><td id="cell_26"></td><td id="cell_27"></td><td id="cell_28"></td><td id="cell_29"></td><td id="cell_30"></td><td id="cell_31"></td><td id="cell_32"></td><td id="cell_33"></td><td id="cell_34"></td><td id="cell_35"></td><td id="cell_36"></td><td id="cell_37"></td><td id="cell_38"></td><td id="cell_39"></td><td id="cell_40"></td>
+                </tr>
+                <tr>
+                    <td id="cell_41"></td><td id="cell_42"></td><td id="cell_43"></td><td id="cell_44"></td><td id="cell_45"></td><td id="cell_46"></td><td id="cell_47"></td><td id="cell_48"></td><td id="cell_49"></td><td id="cell_50"></td><td id="cell_51"></td><td id="cell_52"></td><td id="cell_53"></td><td id="cell_54"></td><td id="cell_55"></td><td id="cell_56"></td><td id="cell_57"></td><td id="cell_58"></td><td id="cell_59"></td><td id="cell_60"></td>
+                </tr>
+                <tr>
+                    <td id="cell_61"></td><td id="cell_62"></td><td id="cell_63"></td><td id="cell_64"></td><td id="cell_65"></td><td id="cell_66"></td><td id="cell_67"></td><td id="cell_68"></td><td id="cell_69"></td><td id="cell_70"></td><td id="cell_71"></td><td id="cell_72"></td><td id="cell_73"></td><td id="cell_74"></td><td id="cell_75"></td><td id="cell_76"></td><td id="cell_77"></td><td id="cell_78"></td><td id="cell_79"></td><td id="cell_80"></td>
+                </tr>
+                <tr>
+                    <td id="cell_81"></td><td id="cell_82"></td><td id="cell_83"></td><td id="cell_84"></td><td id="cell_85"></td><td id="cell_86"></td><td id="cell_87"></td><td id="cell_88"></td><td id="cell_89"></td><td id="cell_90"></td><td id="cell_91"></td><td id="cell_92"></td><td id="cell_93"></td><td id="cell_94"></td><td id="cell_95"></td><td id="cell_96"></td><td id="cell_97"></td><td id="cell_98"></td><td id="cell_99"></td><td id="cell_100"></td>
+                </tr>
+                <tr>
+                    <td id="cell_101"></td><td id="cell_102"></td><td id="cell_103"></td><td id="cell_104"></td><td id="cell_105"></td><td id="cell_106"></td><td id="cell_107"></td><td id="cell_108"></td><td id="cell_109"></td><td id="cell_110"></td><td id="cell_111"></td><td id="cell_112"></td><td id="cell_113"></td><td id="cell_114"></td><td id="cell_115"></td><td id="cell_116"></td><td id="cell_117"></td><td id="cell_118"></td><td id="cell_119"></td><td id="cell_120"></td>
+                </tr>
+                <tr>
+                    <td id="cell_121"></td><td id="cell_122"></td><td id="cell_123"></td><td id="cell_124"></td><td id="cell_125"></td><td id="cell_126"></td><td id="cell_127"></td><td id="cell_128"></td><td id="cell_129"></td><td id="cell_130"></td><td id="cell_131"></td><td id="cell_132"></td><td id="cell_133"></td><td id="cell_134"></td><td id="cell_135"></td><td id="cell_136"></td><td id="cell_137"></td><td id="cell_138"></td><td id="cell_139"></td><td id="cell_140"></td>
+                </tr>
+                <tr>
+                    <td id="cell_141"></td><td id="cell_142"></td><td id="cell_143"></td><td id="cell_144"></td><td id="cell_145"></td><td id="cell_146"></td><td id="cell_147"></td><td id="cell_148"></td><td id="cell_149"></td><td id="cell_150"></td><td id="cell_151"></td><td id="cell_152"></td><td id="cell_153"></td><td id="cell_154"></td><td id="cell_155"></td><td id="cell_156"></td><td id="cell_157"></td><td id="cell_158"></td><td id="cell_159"></td><td id="cell_160"></td>
+                </tr>
+                <tr>
+                    <td id="cell_161"></td><td id="cell_162"></td><td id="cell_163"></td><td id="cell_164"></td><td id="cell_165"></td><td id="cell_166"></td><td id="cell_167"></td><td id="cell_168"></td><td id="cell_169"></td><td id="cell_170"></td><td id="cell_171"></td><td id="cell_172"></td><td id="cell_173"></td><td id="cell_174"></td><td id="cell_175"></td><td id="cell_176"></td><td id="cell_177"></td><td id="cell_178"></td><td id="cell_179"></td><td id="cell_180"></td>
+                </tr>
+                <tr>
+                    <td id="cell_181"></td><td id="cell_182"></td><td id="cell_183"></td><td id="cell_184"></td><td id="cell_185"></td><td id="cell_186"></td><td id="cell_187"></td><td id="cell_188"></td><td id="cell_189"></td><td id="cell_190"></td><td id="cell_191"></td><td id="cell_192"></td><td id="cell_193"></td><td id="cell_194"></td><td id="cell_195"></td><td id="cell_196"></td><td id="cell_197"></td><td id="cell_198"></td><td id="cell_199"></td><td id="cell_200"></td>
+                </tr>
+                 <tr>
+                <td id="cell_201"></td><td id="cell_202"></td><td id="cell_203"></td><td id="cell_204"></td><td id="cell_205"></td><td id="cell_206"></td><td id="cell_207"></td><td id="cell_208"></td><td id="cell_209"></td><td id="cell_210"></td><td id="cell_211"></td><td id="cell_212"></td><td id="cell_213"></td><td id="cell_214"></td><td id="cell_215"></td><td id="cell_216"></td><td id="cell_217"></td><td id="cell_218"></td><td id="cell_219"></td><td id="cell_220"></td>
+                </tr>
+                    <tr>
+                        <td id="cell_221"></td><td id="cell_222"></td><td id="cell_223"></td><td id="cell_224"></td><td id="cell_225"></td><td id="cell_226"></td><td id="cell_227"></td><td id="cell_228"></td><td id="cell_229"></td><td id="cell_230"></td><td id="cell_231"></td><td id="cell_232"></td><td id="cell_233"></td><td id="cell_234"></td><td id="cell_235"></td><td id="cell_236"></td><td id="cell_237"></td><td id="cell_238"></td><td id="cell_239"></td><td id="cell_240"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_241"></td><td id="cell_242"></td><td id="cell_243"></td><td id="cell_244"></td><td id="cell_245"></td><td id="cell_246"></td><td id="cell_247"></td><td id="cell_248"></td><td id="cell_249"></td><td id="cell_250"></td><td id="cell_251"></td><td id="cell_252"></td><td id="cell_253"></td><td id="cell_254"></td><td id="cell_255"></td><td id="cell_256"></td><td id="cell_257"></td><td id="cell_258"></td><td id="cell_259"></td><td id="cell_260"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_261"></td><td id="cell_262"></td><td id="cell_263"></td><td id="cell_264"></td><td id="cell_265"></td><td id="cell_266"></td><td id="cell_267"></td><td id="cell_268"></td><td id="cell_269"></td><td id="cell_270"></td><td id="cell_271"></td><td id="cell_272"></td><td id="cell_273"></td><td id="cell_274"></td><td id="cell_275"></td><td id="cell_276"></td><td id="cell_277"></td><td id="cell_278"></td><td id="cell_279"></td><td id="cell_280"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_281"></td><td id="cell_282"></td><td id="cell_283"></td><td id="cell_284"></td><td id="cell_285"></td><td id="cell_286"></td><td id="cell_287"></td><td id="cell_288"></td><td id="cell_289"></td><td id="cell_290"></td><td id="cell_291"></td><td id="cell_292"></td><td id="cell_293"></td><td id="cell_294"></td><td id="cell_295"></td><td id="cell_296"></td><td id="cell_297"></td><td id="cell_298"></td><td id="cell_299"></td><td id="cell_300"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_301"></td><td id="cell_302"></td><td id="cell_303"></td><td id="cell_304"></td><td id="cell_305"></td><td id="cell_306"></td><td id="cell_307"></td><td id="cell_308"></td><td id="cell_309"></td><td id="cell_310"></td><td id="cell_311"></td><td id="cell_312"></td><td id="cell_313"></td><td id="cell_314"></td><td id="cell_315"></td><td id="cell_316"></td><td id="cell_317"></td><td id="cell_318"></td><td id="cell_319"></td><td id="cell_320"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_321"></td><td id="cell_322"></td><td id="cell_323"></td><td id="cell_324"></td><td id="cell_325"></td><td id="cell_326"></td><td id="cell_327"></td><td id="cell_328"></td><td id="cell_329"></td><td id="cell_330"></td><td id="cell_331"></td><td id="cell_332"></td><td id="cell_333"></td><td id="cell_334"></td><td id="cell_335"></td><td id="cell_336"></td><td id="cell_337"></td><td id="cell_338"></td><td id="cell_339"></td><td id="cell_340"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_341"></td><td id="cell_342"></td><td id="cell_343"></td><td id="cell_344"></td><td id="cell_345"></td><td id="cell_346"></td><td id="cell_347"></td><td id="cell_348"></td><td id="cell_349"></td><td id="cell_350"></td><td id="cell_351"></td><td id="cell_352"></td><td id="cell_353"></td><td id="cell_354"></td><td id="cell_355"></td><td id="cell_356"></td><td id="cell_357"></td><td id="cell_358"></td><td id="cell_359"></td><td id="cell_360"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_361"></td><td id="cell_362"></td><td id="cell_363"></td><td id="cell_364"></td><td id="cell_365"></td><td id="cell_366"></td><td id="cell_367"></td><td id="cell_368"></td><td id="cell_369"></td><td id="cell_370"></td><td id="cell_371"></td><td id="cell_372"></td><td id="cell_373"></td><td id="cell_374"></td><td id="cell_375"></td><td id="cell_376"></td><td id="cell_377"></td><td id="cell_378"></td><td id="cell_379"></td><td id="cell_380"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell_381"></td><td id="cell_382"></td><td id="cell_383"></td><td id="cell_384"></td><td id="cell_385"></td><td id="cell_386"></td><td id="cell_387"></td><td id="cell_388"></td><td id="cell_389"></td><td id="cell_390"></td><td id="cell_391"></td><td id="cell_392"></td><td id="cell_393"></td><td id="cell_394"></td><td id="cell_395"></td><td id="cell_396"></td><td id="cell_397"></td><td id="cell_398"></td><td id="cell_399"></td><td id="cell_400"></td>
+                    </tr>
+                </table>
+             <h2 id="score">Score:<span>0</span></h2>
+            <h2 id="highscore">HighestScore:<span id="displayHighScore"></span></h2>
+        </center>
+
+        <div id="dialogbox">
+            <div id="dialogbox_content">
+                <h3>Game Over !</h3>
+                <button onclick="startgame()">play again</button>
+            </div>
+        </div>
+
+        <style>
+            table{
+                position:fixed;
+                left: 27.5%;
+                width: 45%;
+                height: 95%;
+                align-items: center;
+                border:5px solid black;
+                background-color: black;
+                border-radius: 10px;
+            }
+            
+            body{
+                background-color: #D5B0AC;
+            }
+            
+            #score{
+                position:fixed;
+                top:  40%;
+                left:8%;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #2F1847;
+                color: #fff;
+                border-radius: 10px;
+            }
+
+            #highscore{
+                position:fixed;
+                top:  40%;
+                left:80%;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: #2F1847;
+                color: #fff;
+                border-radius: 10px;
+            }
+        
+            #dialogbox{
+                display: none;
+                position:fixed;
+                top:  0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(231, 7, 179, 0.5);
+                z-index: 1; 
+                
+            }
+        
+            #dialogbox_content{
+                background-color: #fff;
+                padding: 15px;
+                padding-top:20px;
+                margin-left: 38%;
+                margin-top:15%;
+                width: 20%;
+                height: 18%;
+                text-align: center;
+                border-radius: 10px;
+                border: 4px solid #2F1847;
+            }
+        
+            button{
+                background-color: #472d27;
+                color: #fff;
+                padding: 10px;
+                border-radius: 8px;
+            }
+        
+            button:hover{
+                background-color:#fff;
+                color: #402e2a;
+                font-weight: bold;
+        
+            }
+        
+        </style>
+    </body>
+
+
+
+</html>
